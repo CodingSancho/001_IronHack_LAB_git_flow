@@ -5,19 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git Flow Lab</title>
+    <meta name="description" content="Git Flow practice project" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Main navigation">
         <a href="#" class="nav-logo">Git Flow Lab</a>
+
         <ul class="nav-links">
           <li><a href="#">Button1</a></li>
           <li><a href="#">Button2</a></li>
           <li><a href="#">Button3</a></li>
           <li><a href="#" class="nav-cta">Primary Button</a></li>
-          <button class="theme-toggle" id="themeToggle">🌙</button>
         </ul>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          🌙
+        </button>
       </nav>
     </header>
 
@@ -25,6 +30,6 @@
       <h1>Hello, Git Flow 👋</h1>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

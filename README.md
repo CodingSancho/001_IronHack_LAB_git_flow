@@ -1,18 +1,37 @@
 # Git Flow Lab
 
-A static frontend for practicing Git Flow.
+A small static frontend project used to practice a basic Git Flow workflow (feature → develop → release → main).
+
+## Description
+
+This project demonstrates a simple UI with a theme switcher while serving as a sandbox for learning branching strategies, releases, and version tagging.
 
 ## Running locally
 
-Open `index.html` with Live Server in VS Code, or drag it into your browser.
+You can run the project without any build tools:
+
+- Open index.html with Live Server in VS Code
+- Drag and drop the file into your browser
 
 ## Features
 
 ### Dark / Light theme toggle
 
-A button in the top-right of the navbar switches between dark and light themes.
+A toggle button in the top-right of the navigation bar switches between dark and light themes.
 
-- Default is dark.
-- Clicking toggles a `data-theme` attribute on `<body>` between `"dark"` and `"light"`.
-- All colors are driven by CSS variables in `:root`, overridden by the `[data-theme="light"]` selector.
-- The button icon flips between 🌙 and ☀️ to reflect the current state.
+- Default theme is dark
+- Clicking the button updates the data-theme attribute on the <body> element:
+  "dark" → default
+  "light" → light mode
+- Styling is controlled via CSS variables:
+  Defined in :root (default theme)
+  Overridden in [data-theme="light"]
+- The button icon updates dynamically:
+  🌙 for dark mode
+  ☀️ for light mode
+
+## Tech Stack
+
+HTML5
+CSS3 (with custom properties / variables)
+Vanilla JavaScript
